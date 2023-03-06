@@ -238,6 +238,32 @@ Follow the instructions in the comments to provide a proper definition of `xs`,
 then rerun the command above to generate a markdown table of runtimes.
 Copy/paste the table into the README file below this line.
 
+|                | `timsort`     | `merge_sorted`| `quick_sorted`|
+| -------------- | ------------- | ------------- | ------------- |
+| `len(xs)=2**0` |   2.65e-06    |   1.90e-06    |   1.76e-06    |
+| `len(xs)=2**1` |   2.05e-06    |   7.12e-06    |   7.82e-06    |
+| `len(xs)=2**2` |   1.74e-06    |   1.18e-05    |   1.18e-05    |
+| `len(xs)=2**3` |   1.87e-06    |   2.15e-05    |   2.06e-05    |
+| `len(xs)=2**4` |   1.97e-06    |   4.33e-05    |   4.08e-05    |
+| `len(xs)=2**5` |   2.38e-06    |   9.16e-05    |   8.61e-05    |
+| `len(xs)=2**6` |   3.08e-06    |   1.99e-04    |   1.91e-04    |
+| `len(xs)=2**7` |   4.12e-06    |   4.25e-04    |   4.27e-04    |
+| `len(xs)=2**8` |   6.65e-06    |   9.22e-04    |   9.63e-04    |
+| `len(xs)=2**9` |   1.39e-05    |   1.97e-03    |   2.15e-03    |
+| `len(xs)=2**10` |   2.22e-05    |   4.26e-03    |   4.63e-03    |
+| `len(xs)=2**11` |   4.87e-05    |   9.29e-03    |   1.02e-02    |
+| `len(xs)=2**12` |   9.77e-05    |   1.97e-02    |   2.23e-02    |
+| `len(xs)=2**13` |   2.04e-04    |   4.23e-02    |   4.74e-02    |
+| `len(xs)=2**14` |   4.06e-04    |   8.97e-02    |   6.33e-02    |
+| `len(xs)=2**15` |   5.39e-04    |   1.05e-01    |   1.26e-01    |
+| `len(xs)=2**16` |   9.00e-04    |   2.22e-01    |   2.78e-01    |
+| `len(xs)=2**17` |   2.07e-03    |   4.79e-01    |   5.74e-01    |
+| `len(xs)=2**18` |   4.19e-03    |   1.01e+00    |   1.20e+00    |
+| `len(xs)=2**19` |   9.05e-03    |   2.14e+00    |   3.19e+00    |
+| `len(xs)=2**20` |   2.50e-02    |   5.83e+00    |   8.91e+00    |
+| `len(xs)=2**21` |   9.24e-02    |   2.70e+01    |   3.18e+01    |
+| `len(xs)=2**22` |   1.86e-01    |   5.78e+01    |   6.95e+01    |
+| `len(xs)=2**23` |   3.73e-01    |   1.22e+02    |   1.48e+02    |
 
 You should notice that the built-in `sorted` function ran much faster on this input,
 but your `merge_sorted` and `quick_sorted` functions have essentially the same runtimes.
