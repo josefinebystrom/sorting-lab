@@ -9,6 +9,9 @@ import random
 # the following import line will only work if the sorting submodule has been correctly downloaded
 from sorting.sorting import merge_sorted, quick_sorted
 
+print('|                | `timsort`     | `merge_sorted`| `quick_sorted`|')
+print('| -------------- | ------------- | ------------- | ------------- |')
+
 if __name__ == '__main__':
 
     # process command line parameters
@@ -55,8 +58,16 @@ if __name__ == '__main__':
         # You will have to look up how to do this formatting.
         # In order to get a proper markdown table,
         # you will have to also print a header line somewhere else.
-        print(f'len(xs)=2**{x} runtimes={runtimes}')
+        
+        col0 = f"`len(xs)=2**{x}`"
+
+        result_cols = ""
+
+        for runtime in runtimes:
+
+            result_cols += f"   {runtimes[runtime]:0.2e}    |"
+        print(f"| {col0} |{result_cols}")
+
 
         # HINT:
-        # use f-strings and a print statement that looks something like
-        # print(f"| {runtimes['timsort']:0.2e} ")
+        # use f-strings and a print statement that looks something like        # print(f"| {runtimes['timsort']:0.2e} ")
